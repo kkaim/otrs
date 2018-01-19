@@ -1,6 +1,6 @@
-package biz.kaim.otrs.restaurantservice.repository;
+package biz.kaim.restaurantservice.otrs.repository;
 
-import biz.kaim.otrs.restaurantservice.domain.Restaurant;
+import biz.kaim.restaurantservice.otrs.domain.Restaurant;
 
 import java.util.ArrayList;
 import java.util.Collection;

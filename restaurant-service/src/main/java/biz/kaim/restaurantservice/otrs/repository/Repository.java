@@ -1,4 +1,4 @@
-package biz.kaim.otrs.restaurantservice.repository;
+package biz.kaim.restaurantservice.otrs.repository;
 
 public interface Repository<TE, T> extends ReadOnlyRepository<TE, T> {
     void add(TE entity);

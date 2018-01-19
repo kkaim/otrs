@@ -1,8 +1,8 @@
-package biz.kaim.otrs.restaurantservice.service;
+package biz.kaim.restaurantservice.otrs.service;
 
- import biz.kaim.otrs.restaurantservice.domain.Entity;
- import biz.kaim.otrs.restaurantservice.domain.Restaurant;
-import biz.kaim.otrs.restaurantservice.repository.RestaurantRepository;
+ import biz.kaim.restaurantservice.otrs.domain.Entity;
+ import biz.kaim.restaurantservice.otrs.domain.Restaurant;
+import biz.kaim.restaurantservice.otrs.repository.RestaurantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

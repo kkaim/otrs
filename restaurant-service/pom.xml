@@ -12,7 +12,7 @@
     <artifactId>restaurant-service</artifactId>
     <packaging>jar</packaging>
     <properties>
-        <start-class>biz.kaim.otrs.restaurantservice.RestaurantApp</start-class>
+        <start-class>biz.kaim.restaurantservice.otrs.RestaurantApp</start-class>
     </properties>
 
     <dependencies>

@@ -1,10 +1,10 @@
-package biz.kaim.otrs.restaurantservice.controller;
+package biz.kaim.restaurantservice.otrs.controller;
 
 
-import biz.kaim.otrs.restaurantservice.domain.Entity;
-import biz.kaim.otrs.restaurantservice.domain.Restaurant;
-import biz.kaim.otrs.restaurantservice.domain.RestaurantVO;
-import biz.kaim.otrs.restaurantservice.service.RestaurantService;
+import biz.kaim.restaurantservice.otrs.domain.Entity;
+import biz.kaim.restaurantservice.otrs.domain.Restaurant;
+import biz.kaim.restaurantservice.otrs.domain.RestaurantVO;
+import biz.kaim.restaurantservice.otrs.service.RestaurantService;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.springframework.beans.BeanUtils;

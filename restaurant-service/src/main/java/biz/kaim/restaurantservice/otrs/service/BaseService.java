@@ -1,7 +1,7 @@
-package biz.kaim.otrs.restaurantservice.service;
+package biz.kaim.restaurantservice.otrs.service;
 
-import biz.kaim.otrs.restaurantservice.domain.Restaurant;
-import biz.kaim.otrs.restaurantservice.repository.RestaurantRepository;
+import biz.kaim.restaurantservice.otrs.domain.Restaurant;
+import biz.kaim.restaurantservice.otrs.repository.RestaurantRepository;
 
 public class BaseService<T, T1> {
     public BaseService(RestaurantRepository<Restaurant, String> restaurantRepository) {

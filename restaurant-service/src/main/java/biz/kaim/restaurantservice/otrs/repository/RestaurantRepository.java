@@ -1,4 +1,4 @@
-package biz.kaim.otrs.restaurantservice.repository;
+package biz.kaim.restaurantservice.otrs.repository;
 
 import java.util.Collection;
 

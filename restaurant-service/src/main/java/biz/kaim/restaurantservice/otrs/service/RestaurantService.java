@@ -1,6 +1,7 @@
-package biz.kaim.otrs.restaurantservice.service;
+package biz.kaim.restaurantservice.otrs.service;
 
-import biz.kaim.otrs.restaurantservice.domain.Restaurant;
+import biz.kaim.restaurantservice.otrs.domain.Restaurant;
+import biz.kaim.restaurantservice.otrs.domain.Entity;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,7 +16,7 @@ public interface RestaurantService {
 
     public void delete(String id) throws Exception;
 
-    public biz.kaim.otrs.restaurantservice.domain.Entity findById(String restaurantId) throws Exception;
+    public Entity findById(String restaurantId) throws Exception;
 
     public Collection<Restaurant> findByName(String name) throws Exception;
 

@@ -1,6 +1,6 @@
-package biz.kaim.otrs.restaurantservice.repository;
+package biz.kaim.restaurantservice.otrs.repository;
 
-import biz.kaim.otrs.restaurantservice.domain.Entity;
+import biz.kaim.restaurantservice.otrs.domain.Entity;
 
 import java.util.Collection;
 

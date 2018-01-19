@@ -1,4 +1,4 @@
-package biz.kaim.otrs.restaurantservice.domain;
+package biz.kaim.restaurantservice.otrs.domain;
 
 import java.math.BigInteger;
 
