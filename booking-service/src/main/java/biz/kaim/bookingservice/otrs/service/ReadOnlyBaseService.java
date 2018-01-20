@@ -1,0 +1,14 @@
+package biz.kaim.bookingservice.otrs.service;
+
+
+import biz.kaim.bookingservice.otrs.repository.ReadOnlyRepository;
+
+
+public abstract class ReadOnlyBaseService<TE, T> {
+
+    private ReadOnlyRepository<TE, T> repository;
+
+    ReadOnlyBaseService(ReadOnlyRepository<TE, T> repository) {
+        this.repository = repository;
+    }
+}
