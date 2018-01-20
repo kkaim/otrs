@@ -13,7 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
- import java.util.Collection;
+import java.util.Collection;
 
 @RestController
 @RequestMapping("v1/restaurants")
@@ -63,14 +63,16 @@ public class RestaurantController {
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<Restaurant> add(@RequestBody RestaurantVO restaurantVO) {
-        Restaurant restaurant = new Restaurant(null, null, null);
+        logger.info(String.format("restaurant-service add() invoked: %s for %s", restaurantService.getClass().getName(), restaurantVO.getName()));
+        Restaurant restaurant = new Restaurant(null, null, null, null);
         BeanUtils.copyProperties(restaurantVO, restaurant);
+
         try {
             restaurantService.add(restaurant);
         } catch (Exception ex) {
+            logger.log(Level.WARN, "Exception raised add Restaurant REST Call {0}", ex);
             return new ResponseEntity<>(HttpStatus.UNPROCESSABLE_ENTITY);
         }
-
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 

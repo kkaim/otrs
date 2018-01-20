@@ -1,13 +1,19 @@
 package biz.kaim.restaurantservice.otrs.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.math.BigInteger;
 
 public class Table extends BaseEntity<BigInteger> {
     private int capacity;
 
-    public Table(String name, BigInteger id, int capacity) {
+    public Table(@JsonProperty("name") String name, @JsonProperty("id") BigInteger id,
+                 @JsonProperty("capacity") int capacity) {
+
         super(id, name);
+
         this.capacity = capacity;
+
     }
 
     public int getCapacity() {

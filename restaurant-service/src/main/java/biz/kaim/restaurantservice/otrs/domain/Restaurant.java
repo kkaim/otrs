@@ -4,11 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Restaurant extends BaseEntity<String> {
-    private List<Table> tables = new ArrayList<>();
+    private List<Table> tables;
+    private String address;
 
-    public Restaurant(String name, String id, List<Table> tables) {
+    public Restaurant(String name, String id, String address, List<Table> tables) {
         super(id, name);
+        this.address = address;
         this.tables = tables;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public List<Table> getTables() {
@@ -19,11 +29,9 @@ public class Restaurant extends BaseEntity<String> {
         this.tables = tables;
     }
 
-//    @Override
-//    public String toString() {
-//        return String.format("{id: %s, name: %s, address: %s, tables: %s}", this.getId(),
-//                this.getName(), this.getAddress(), this.getTables());
-//    }
-
-
+    @Override
+    public String toString() {
+        return String.format("{id: %s, name: %s, address: %s, tables: %s}", this.getId(),
+                this.getName(), this.getAddress(), this.getTables());
+    }
 }
